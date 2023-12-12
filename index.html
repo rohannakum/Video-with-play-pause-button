@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video player</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <p>Click Center to Show Button</p>
+    </div>
+    <main id="main">
+        
+        <div id="mainDiv">
+
+           
+            <video id="video">
+                <source src="my-video.mp4" loop>
+            </video>
+
+            <div id="div1" onclick="showHide()">
+                <div id="div2" class="showDiv2">
+                    <button id="buttonText1" onclick="playFunction()"><img src="./button1.png" alt="play"></button>
+                    <button id="buttonText2" onclick="pauseFunction()"><img src="./button2.png" alt="pause"></button>
+
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <!-- JS link -->
+    <script>
+
+
+
+        // Always Hide Button 
+        setTimeout(() => {
+            document.getElementById("div2").style.display = "none";
+            console.log("5 sec out")
+        }
+            , 5000)
+
+        // Hide Text 
+        setTimeout(() => {
+            document.getElementById("div3").style.display = "none";
+            console.log("5 sec out")
+        }
+            , 5000)
+
+
+        // Show Button 
+
+        function showHide() {
+
+            let a = document.getElementById("div2")
+
+
+            if (a.style.display === "none") {
+
+                a.style.display = "flex";
+
+                console.log("if run show");
+
+            }
+
+            setTimeout(() => {
+                document.getElementById("div2").style.display = "none";
+                console.log("5 sec out")
+            }
+                , 5000)
+        }
+
+
+        // Function for play Button
+        function playFunction() {
+
+            let Video1 = document.getElementById("video");
+
+            Video1.play();
+
+            document.getElementById("buttonText1").style.display = "none";
+            document.getElementById("buttonText2").style.display = "flex";
+            console.log("button 1 cliked");
+        }
+
+
+        // Function for pause Button
+
+        function pauseFunction() {
+
+            let Video1 = document.getElementById("video");
+
+            Video1.pause();
+
+            document.getElementById("buttonText2").style.display = "none";
+            document.getElementById("buttonText1").style.display = "flex";
+            console.log("button 2 cliked")
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.heading {
+    color: black;
+    font-size: 25px;
+    width: 100vw;
+    height: 30px;
+    text-align: center;
+
+}
+
+
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#video {
+    width: 70%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+
+/* Show or Hide Button  */
+#div1 {
+    width: 100px;
+    height: 100px;
+}
+
+#div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* play button CSS */
+#buttonText1 {
+    border: 2px solid rgba(58, 55, 55, 0.400);
+    background-color: rgb(58, 55, 55, 0.400);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonText1 img {
+    width: 30px;
+    height: auto
+}
+
+#buttonText1:hover {
+    border: 2px solid rgba(58, 55, 55, 0.600);
+    background-color: rgb(58, 55, 55, 0.600);
+
+}
+
+/* pause button CSS */
+#buttonText2 {
+    border: 2px solid rgba(58, 55, 55, 0.400);
+    background-color: rgb(58, 55, 55, 0.400);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#buttonText2 img {
+    width: 30px;
+    height: auto
+}
+
+#buttonText2:hover {
+    border: 2px solid rgba(58, 55, 55, 0.600);
+    background-color: rgb(58, 55, 55, 0.600);
+
+}
